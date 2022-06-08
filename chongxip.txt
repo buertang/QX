@@ -1,0 +1,77 @@
+# >微信公众号文章下方广告
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint url reject
+^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ url reject-img
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video url reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report url reject
+^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
+^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) url reject-img
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject
+^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) url reject-200
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[]
+
+# >> 网易蜗牛读书
+^https?+:\/\/easyreadfs\.nosdn\.127\.net\/ad-material\/ url reject-200
+^https?+:\/\/p\.du\.163\.com\/ad\/ url reject-200
+# > 网易云音乐
+^https?+:\/\/.+?\/eapi\/(?>ad|log)\/ url reject-200
+^https?:\/\/interface(\d)?.music.163.com\/eapi\/ad\/ url reject
+^https?:\/\/iadmusicmat\.music\.126\.net\/.+\.jpg url reject
+^http:\/\/interface\.music\.163\.com\/eapi\/ad\/config\/get url reject
+^https?:\//m\.ads\.8le8le\.com\/adShow url reject
+# > 网易邮箱
+^https?+:\/\/appconf\.mail\.163\.com\/mmad\/ url reject-200
+https:\/\/appconf\.mail\.163\.com\/mmad\/get\.do url reject
+http:\/\/analytics\.163\.com\/ntes url reject
+# > 抖音去广告, 去水印
+^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-request-header https://raw.githubusercontent.com/28413761/QX/main/JS/douyin.js
+^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-response-body https://raw.githubusercontent.com/28413761/QX/main/JS/douyin.js
+^https?:\/\/.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/(vapp\/inner_ad|log|location)\/ url reject
+^https?:\/\/x?log.*\.(snssdk\.com|musical\.ly|amemv\.com|byteoversea\.com|tiktokv\.com)\/ url reject
+^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject-200
+^https?:\/\/.+\.musical\.ly\/.+stats url reject-img
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ url reject-img
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ url reject-img
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ url reject-img
+^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log url reject-img
+# > 懒人听书
+^https?:\/\/118\.178\.214\.118\/yyting\/advertclient\/ClientAdvertList\.action url reject-img
+^https?:\/\/dapis\.mting\.info\/yyting\/advertclient\/ClientAdvertList\.action url reject-img
+^https?:\/\/display\.wting\.info\/.*.jpeg url reject-200
+# > 番茄小说去章末广告
+^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-app-package\/.+ url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/web\.business\.image\/.+ url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/package\.json url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/.+\/fallback\.js url reject
+^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package url reject
+^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/ad-pattern\/renderer\/package\.json url reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/img-cut-tos\/.+ url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/web\.business\.image\/.+ url reject
+^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 url reject
+^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ url reject
+^http:\/\/.+\.byteimg\.com\/ad-app-package url reject
+# > 掌阅
+^https?+:\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad\/ url reject-200
+^https?+:\/\/ih2\.ireader\.com\/zyapi\/self\/screen\/ad url reject-200
+^https?+:\/\/ih2\.ireader\.com\/zycl\/api\/ad\/ url reject-200
+^https?:\/\/book\.img\.ireader\.com\/group6\/M00 url reject-img
+# >> 咪咕
+^https?+:\/\/gg\w+?\.cmvideo\.cn\/v\d\/iflyad\/ url reject-200
+^https?+:\/\/ggic\d?\.cmvideo\.cn\/ad\/ url reject-200
+^https?+:\/\/ggx\.cmvideo\.cn\/request\/ url reject-200
+^https?+:\/\/.+?\/cdn-adn\/ url reject-200
+# > 穷游
+^https?+:\/\/open\.qyer\.com\/qyer\/startpage\/ url reject-200
+^https?:\/\/open\.qyer\.com\/qyer\/config\/get url reject
+^https?:\/\/media\.qyer\.com\/ad\/ url reject
+# > 韩剧TV
+^https?:\/\/gfp\.veta\.naver\.com\/adcall\? url reject
+^https?:\/\/api\.hanju\.koudaibaobao\.com\/api\/carp\/kp\? url reject
+# > 爱美剧
+^https?:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/ver/index_ios$ url reject
+^https?:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/pay/ok$ url reject-dict
+^https?:\/\/api\.bjxkhc\.com\/index\.php\/app\/ios\/ads\/ url reject
