@@ -14,35 +14,6 @@ host,itunes.apple.com,proxy
 host-suffix,apps.apple.com,proxy
 host-suffix,blobstore.apple.com,proxy
 host,cvws.icloud-content.com,proxy
-
-# 常见广告
-host-KEYWORD,admarvel,reject-tinygif
-host-KEYWORD,admaster,reject-tinygif
-host-KEYWORD,adsage,reject-tinygif
-host-KEYWORD,adsmogo,reject-tinygif
-host-KEYWORD,adsrvmedia,reject-tinygif
-host-KEYWORD,adwords,reject-tinygif
-host-KEYWORD,adservice,reject-tinygif
-host-suffix,appsflyer.com,reject-tinygif
-host-KEYWORD,domob,reject-tinygif
-host-suffix,doubleclick.net,reject-tinygif
-host-KEYWORD,duomeng,reject-tinygif
-host-KEYWORD,dwtrack,reject-tinygif
-host-KEYWORD,guanggao,reject-tinygif
-host-KEYWORD,lianmeng,reject-tinygif
-host-suffix,mmstat.com,reject-tinygif
-host-KEYWORD,mopub,reject-tinygif
-host-KEYWORD,omgmta,reject-tinygif
-host-KEYWORD,openx,reject-tinygif
-host-KEYWORD,partnerad,reject-tinygif
-host-KEYWORD,pingfore,reject-tinygif
-host-KEYWORD,supersonicads,reject-tinygif
-host-KEYWORD,uedas,reject-tinygif
-host-KEYWORD,umeng,reject-tinygif
-host-KEYWORD,usage,reject-tinygif
-host-suffix,vungle.com,reject-tinygif
-host-KEYWORD,wlmonitor,reject-tinygif
-host-KEYWORD,zjtoolbar,reject-tinygif
 # # 抗 DNS 污染
 host-KEYWORD,amazon,proxy
 host-KEYWORD,google,proxy
