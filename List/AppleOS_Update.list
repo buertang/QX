@@ -1,43 +1,43 @@
 # 屏蔽 AppleOS 更新
 
 # 屏蔽 iOS/iPadOS 企业证书失效
-DOMAIN-SUFFIX,ocsp-lb.apple.com.akadns.net
-DOMAIN-SUFFIX,ocsp.apple.com
-DOMAIN-SUFFIX,ocsp.g.aaplimg.com
+HOST-SUFFIX,ocsp-lb.apple.com.akadns.net
+HOST-SUFFIX,ocsp.apple.com
+HOST-SUFFIX,ocsp.g.aaplimg.com
 
 # iOS/iPadOS Update
-DOMAIN,ns.itunes.apple.com
-DOMAIN-SUFFIX,appldnld-lb.apple.com.akadns.net
-DOMAIN-SUFFIX,appldnld.apple.com
-DOMAIN-SUFFIX,appldnld.apple.com.akadns.net
-DOMAIN-SUFFIX,appldnld.g.aaplimg.com
-DOMAIN,ipsw.me
+HOST,ns.itunes.apple.com
+HOST-SUFFIX,appldnld-lb.apple.com.akadns.net
+HOST-SUFFIX,appldnld.apple.com
+HOST-SUFFIX,appldnld.apple.com.akadns.net
+HOST-SUFFIX,appldnld.g.aaplimg.com
+HOST,ipsw.me
 
 # iOS/iPadOS, tvOS and macOS
-DOMAIN,gg.apple.com
-DOMAIN-SUFFIX,gdmf.apple.com
-DOMAIN-SUFFIX,gdmf.apple.com.akadns.net
-DOMAIN-SUFFIX,mesu-cdn.apple.com.akadns.net
-DOMAIN-SUFFIX,mesu-cdn.origin-apple.com.akadns.net
-DOMAIN-SUFFIX,mesu.apple.com
-DOMAIN-SUFFIX,mesu.g.aaplimg.com
-DOMAIN,updates.cdn-apple.com
-DOMAIN,updates-http.cdn-apple.com
-DOMAIN,xp.apple.com
+HOST,gg.apple.com
+HOST-SUFFIX,gdmf.apple.com
+HOST-SUFFIX,gdmf.apple.com.akadns.net
+HOST-SUFFIX,mesu-cdn.apple.com.akadns.net
+HOST-SUFFIX,mesu-cdn.origin-apple.com.akadns.net
+HOST-SUFFIX,mesu.apple.com
+HOST-SUFFIX,mesu.g.aaplimg.com
+HOST,updates.cdn-apple.com
+HOST,updates-http.cdn-apple.com
+HOST,xp.apple.com
 
 # macOS Update
-DOMAIN,configuration.apple.com
-DOMAIN,gnf-mdn.apple.com
-DOMAIN,gnf-mr.apple.com
-DOMAIN,gs.apple.com
-DOMAIN,ig.apple.com
-DOMAIN,skl.apple.com
-DOMAIN,swcdn.apple.com
-DOMAIN,swdist.apple.com
-DOMAIN,swdownload.apple.com
-DOMAIN,swpost.apple.com
-DOMAIN,swscan.apple.com
+HOST,configuration.apple.com
+HOST,gnf-mdn.apple.com
+HOST,gnf-mr.apple.com
+HOST,gs.apple.com
+HOST,ig.apple.com
+HOST,skl.apple.com
+HOST,swcdn.apple.com
+HOST,swdist.apple.com
+HOST,swdownload.apple.com
+HOST,swpost.apple.com
+HOST,swscan.apple.com
 
 # macOS Recovery
-DOMAIN,oscdn.apple.com
-DOMAIN,osrecovery.apple.comk
+HOST,oscdn.apple.com
+HOST,osrecovery.apple.comk
