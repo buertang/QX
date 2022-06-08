@@ -7,4 +7,4 @@ host, gdmf.apple.com
 HOST-SUFFIX,iadsdk.apple.com
 HOST-SUFFIX,ads.internal.unity3d.com
 HOST-SUFFIX,ads.prd.ie.internal.unity3d.com
-HOST-SUFFIX,unityads.unity3d.com,
+HOST-SUFFIX,unityads.unity3d.com
