@@ -1,9 +1,9 @@
 # 屏蔽 AppleOS 更新
 
 # 屏蔽 iOS/iPadOS 企业证书失效
-HOST-SUFFIX,ocsp-lb.apple.com.akadns.net
-HOST-SUFFIX,ocsp.apple.com
-HOST-SUFFIX,ocsp.g.aaplimg.com
+# HOST-SUFFIX,ocsp-lb.apple.com.akadns.net
+# HOST-SUFFIX,ocsp.apple.com
+# HOST-SUFFIX,ocsp.g.aaplimg.com
 
 # iOS/iPadOS Update
 HOST,ns.itunes.apple.com
