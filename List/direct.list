@@ -1,5 +1,5 @@
 
-host,safebrowsing.googleapis.com
+
 USER-AGENT,com.apple.appstored*
 USER-AGENT,AppStore*
 host-suffix,mzstatic.com
