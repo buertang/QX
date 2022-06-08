@@ -1,7 +1,6 @@
 
 
-USER-AGENT,com.apple.appstored*
-USER-AGENT,AppStore*
+
 host-suffix,mzstatic.com
 host-suffix,itunes.apple.com
 host-suffix,icloud.com
