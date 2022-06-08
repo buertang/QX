@@ -1,5 +1,5 @@
 # 强制订阅域名直连
-HOST,,DIRECT
+#HOST,,DIRECT
 # Google 中国服务
 HOST-SUFFIX,services.googleapis.cn,Proxy
 HOST-SUFFIX,xn--ngstr-lra8j.com,Proxy
