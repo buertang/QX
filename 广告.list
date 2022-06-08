@@ -1,0 +1,36 @@
+# > 央视
+HOST-SUFFIX,a.cctv.com, reject
+HOST-SUFFIX,ad.cctv.com, reject
+HOST-SUFFIX,ad.cntv.cn, reject
+HOST-SUFFIX,adguanggao.eee114.com, reject
+HOST-SUFFIX,afp.qiyi.com, reject
+HOST-SUFFIX,cctv.adsunion.com, reject
+HOST-SUFFIX,d.cntv.cn, reject
+HOST-SUFFIX,de.pandora.xiaomi.com, reject
+HOST-SUFFIX,mishop.pandora.xiaomi.com, reject
+HOST-SUFFIX,cws-cctv.conviva.com, reject
+HOST,galaxy.bjcathay.com, reject
+HOST,mdrecv.app.cntvwb.cn, reject
+HOST,sdapprecv.app.cntvwb.cn, reject
+HOST,vdapprecv.app.cntvwb.cn, reject
+HOST-SUFFIX,mdrecv.app.cntvwb.cn, reject
+HOST-SUFFIX,sdapprecv.app.cntvwb.cn, reject
+HOST-SUFFIX,vdapprecv.app.cntvwb.cn, reject
+# > 网易
+HOST-SUFFIX,dsp.youdao.com, reject
+HOST-SUFFIX,union.youdao.com, reject
+HOST,ad.bn.netease.com, reject
+HOST,ad.yixin.im, reject
+HOST,admusicpic.music.126.net, reject
+HOST,g1.163.com, reject
+HOST,gorgon.youdao.com, reject
+HOST,iad.g.163.com, reject
+HOST,iadmat.nosdn.127.net, reject
+HOST,iadmusicmat.music.126.net, reject
+HOST,iadmusicmatvideo.music.126.net, reject
+HOST,impservice.dictapp.youdao.com, reject
+HOST,impservice.youdao.com, reject
+HOST,n.3g.163.com, reject
+HOST,nex.163.com, reject
+HOST,yt-adp.nosdn.127.net, reject
+HOST,yt-adp.ws.126.net, reject
